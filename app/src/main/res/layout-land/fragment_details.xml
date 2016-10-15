@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/text_view_title"
+            android:background="#293843"
+            android:layout_marginTop="1dp"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:id="@+id/img_poster"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/year"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/rate"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="40dp"/>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:shadowRadius="50"
+                    android:id="@+id/add_favourite"
+                    android:text="Add FAVOURITE"
+                    android:textSize="15dp"
+                    android:background="#000000"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/text_view_overview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Trailers: "
+            android:textColor="#239873"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/list_view_trailers"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </ListView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Reviews: "
+            android:textColor="#239873"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="1500dp"
+                android:id="@+id/list_view_reviews"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
