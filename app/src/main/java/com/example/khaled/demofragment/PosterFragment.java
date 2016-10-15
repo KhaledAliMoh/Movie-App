@@ -35,7 +35,7 @@ import java.util.ArrayList;
  */
 public class PosterFragment extends Fragment {
     String BASE_URL = "http://api.themoviedb.org/3/movie/";
-    final String KEY = "9ae53f3101bef7b8b4015690ea82b38c";
+    final String KEY = ""; // Write your KEY here.
 
     String endPoint = "popular";         // default end point with popular
     ArrayList<String> listOfPostersPaths;
